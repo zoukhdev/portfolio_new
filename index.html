@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoukhDev - Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-scroll-container>
+    <!-- GSAP Loading Animation -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-text">ZoukhDev</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="percentage-counter" id="percentageCounter">0%</div>
+            <div class="loading-text">Loading Experience...</div>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" data-scroll-section>
+            <div class="hero-background">
+                <div class="floating-orbs">
+                    <div class="glow-orb orb-1"></div>
+                    <div class="glow-orb orb-2"></div>
+                    <div class="glow-orb orb-3"></div>
+                    <div class="glow-orb orb-4"></div>
+                </div>
+                <div class="spline-container">
+                    <iframe src='https://my.spline.design/orb-WYQgscWlgGzXE5t8r5YqVrrz/' frameborder='0' width='100%' height='100%'></iframe>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <div class="title-row">
+                            <span class="title-line">Hi, I'm</span>
+                            <span class="title-line highlight">ZoukhDev</span>
+                        </div>
+                        <span class="title-line subtitle">Web Developer</span>
+                    </h1>
+                    <p class="hero-subtitle">Crafting digital experiences that inspire and engage through innovative design and cutting-edge technology.</p>
+                    <button class="cta-button" id="hireMeBtn">
+                        <span>Hire Me</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title" data-scroll data-scroll-speed="0.5">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image" data-scroll data-scroll-speed="0.3">
+                        <div class="image-frame">
+                            <img src="images/profile.jpg" alt="ZoukhDev Profile" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                    <div class="about-text" data-scroll data-scroll-speed="0.2">
+                        <div class="creative-developer-section">
+                            <h3>Creative Developer</h3>
+                            <p>I'm a passionate web developer with expertise in modern technologies and a keen eye for design. I specialize in creating immersive, interactive experiences that push the boundaries of what's possible on the web.</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M67.84,92.61,25.37,128l42.47,35.39a6,6,0,1,1-7.68,9.22l-48-40a6,6,0,0,1,0-9.22l48-40a6,6,0,0,1,7.68,9.22Zm176,30.78-48-40a6,6,0,1,0-7.68,9.22L230.63,128l-42.47,35.39a6,6,0,1,0,7.68,9.22l48-40a6,6,0,0,0,0-9.22Zm-81.79-89A6,6,0,0,0,154.36,38l-64,176A6,6,0,0,0,94,221.64a6.15,6.15,0,0,0,2,.36,6,6,0,0,0,5.64-3.95l64-176A6,6,0,0,0,162.05,34.36Z"></path>
+                                </svg>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M199.37,55.31A101.32,101.32,0,0,0,128,26h-1A102,102,0,0,0,26,128c0,42.09,26.07,77.44,68,92.26A30.21,30.21,0,0,0,104.11,222,30.06,30.06,0,0,0,134,192a18,18,0,0,1,18-18h46.21a29.82,29.82,0,0,0,29.25-23.31A102.71,102.71,0,0,0,230,127.11,101.25,101.25,0,0,0,199.37,55.31ZM215.76,148a17.89,17.89,0,0,1-17.55,14H152a30,30,0,0,0-30,30,18,18,0,0,1-24,17C61,195.86,38,164.85,38,128a90,90,0,0,1,89.07-90H128a90.34,90.34,0,0,1,90,89.22A90.46,90.46,0,0,1,215.76,148ZM138,76a10,10,0,1,1-10-10A10,10,0,0,1,138,76ZM94,100A10,10,0,1,1,84,90,10,10,0,0,1,94,100Zm0,56a10,10,0,1,1-10-10A10,10,0,0,1,94,156Zm88-56a10,10,0,1,1-10-10A10,10,0,0,1,182,100Z"></path>
+                                </svg>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M213.84,118.63a6,6,0,0,0-3.73-4.25L150.88,92.17l15-75a6,6,0,0,0-10.27-5.27l-112,120a6,6,0,0,0,2.28,9.71l59.23,22.21-15,75a6,6,0,0,0,3.14,6.52A6.07,6.07,0,0,0,96,246a6,6,0,0,0,4.39-1.91l112-120A6,6,0,0,0,213.84,118.63ZM106,220.46l11.85-59.28a6,6,0,0,0-3.77-6.8l-55.6-20.85,91.46-98L138.12,94.82a6,6,0,0,0,3.77,6.8l55.6,20.85Z"></path>
+                                </svg>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M150,224a6,6,0,0,1-6,6H112a6,6,0,0,1,0-12h32A6,6,0,0,1,150,224ZM128,110a10,10,0,1,0-10-10A10,10,0,0,0,128,110Zm93.67,45.4L209.31,211A14,14,0,0,1,187,219l-27.79-21H96.82L69,219a14,14,0,0,1-22.34-8L34.33,155.4a14.06,14.06,0,0,1,2.91-12l29-34.76a121.28,121.28,0,0,1,8.48-36.71c12.72-31.88,35.52-51.88,44.73-59a14,14,0,0,1,17.16,0c9.21,7.12,32,27.12,44.73,59a121.28,121.28,0,0,1,8.48,36.71l29,34.76A14.06,14.06,0,0,1,221.67,155.4ZM98.26,186h59.48c21.93-38.46,26.12-75.33,12.43-109.62-11.95-30-34.35-48.87-40.93-54a2,2,0,0,0-2.48,0c-6.58,5.09-29,24-40.93,54C72.14,110.67,76.33,147.54,98.26,186ZM87,190.4c-12-21.49-18.9-42.6-20.62-63.19L46.46,151.08a2,2,0,0,0-.42,1.71l12.37,55.64a2,2,0,0,0,3.2,1.13l.13-.11Zm122.57-39.32-19.89-23.87c-1.72,20.59-8.6,41.7-20.62,63.19l25.23,19,.13.11a2,2,0,0,0,3.2-1.13L210,152.79A2,2,0,0,0,209.54,151.08Z"></path>
+                                </svg>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M196.89,130.94,144.4,111.6,125.06,59.11a13.92,13.92,0,0,0-26.12,0L79.6,111.6,27.11,130.94a13.92,13.92,0,0,0,0,26.12L79.6,176.4l19.34,52.49a13.92,13.92,0,0,0,26.12,0L144.4,176.4l52.49-19.34a13.92,13.92,0,0,0,0-26.12Zm-4.15,14.86-55.08,20.3a6,6,0,0,0-3.56,3.56l-20.3,55.08a1.92,1.92,0,0,1-3.6,0L89.9,169.66a6,6,0,0,0-3.56-3.56L31.26,145.8a1.92,1.92,0,0,1,0-3.6l55.08-20.3a6,6,0,0,0,3.56-3.56l20.3-55.08a1.92,1.92,0,0,1,3.6,0l20.3,55.08a6,6,0,0,0,3.56,3.56l55.08,20.3a1.92,1.92,0,0,1,0,3.6ZM146,40a6,6,0,0,1,6-6h18V16a6,6,0,0,1,12,0V34h18a6,6,0,0,1,0,12H182V64a6,6,0,0,1-12,0V46H152A6,6,0,0,1,146,40ZM246,88a6,6,0,0,1-6,6H230v10a6,6,0,0,1-12,0V94H208a6,6,0,0,1,0-12h10V72a6,6,0,0,1,12,0V82h10A6,6,0,0,1,246,88Z"></path>
+                                </svg>
+                                <span>GSAP</span>
+                            </div>
+                            <div class="skill-item">
+                                <svg class="skill-icon" viewBox="0 0 256 256">
+                                    <path d="M196.89,130.94,144.4,111.6,125.06,59.11a13.92,13.92,0,0,0-26.12,0L79.6,111.6,27.11,130.94a13.92,13.92,0,0,0,0,26.12L79.6,176.4l19.34,52.49a13.92,13.92,0,0,0,26.12,0L144.4,176.4l52.49-19.34a13.92,13.92,0,0,0,0-26.12Zm-4.15,14.86-55.08,20.3a6,6,0,0,0-3.56,3.56l-20.3,55.08a1.92,1.92,0,0,1-3.6,0L89.9,169.66a6,6,0,0,0-3.56-3.56L31.26,145.8a1.92,1.92,0,0,1,0-3.6l55.08-20.3a6,6,0,0,0,3.56-3.56l20.3-55.08a1.92,1.92,0,0,1,3.6,0l20.3,55.08a6,6,0,0,0,3.56,3.56l55.08,20.3a1.92,1.92,0,0,1,0,3.6ZM146,40a6,6,0,0,1,6-6h18V16a6,6,0,0,1,12,0V34h18a6,6,0,0,1,0,12H182V64a6,6,0,0,1-12,0V46H152A6,6,0,0,1,146,40ZM246,88a6,6,0,0,1-6,6H230v10a6,6,0,0,1-12,0V94H208a6,6,0,0,1,0-12h10V72a6,6,0,0,1,12,0V82h10A6,6,0,0,1,246,88Z"></path>
+                                </svg>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title" data-scroll data-scroll-speed="0.5">My Projects</h2>
+                <div class="projects-container" data-scroll data-scroll-speed="0.3">
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-1.webp" alt="Project 1">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>GSAP</span>
+                                    <span>Three.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Photography Agency</h3>
+                            <p>A stunning portfolio website featuring 3D animations and smooth interactions.</p>
+                            <a href="https://photography-agency.vercel.app/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-2.webp" alt="Project 2">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>Vue.js</span>
+                                    <span>WebGL</span>
+                                    <span>GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Tech Start Pro Agency</h3>
+                            <p>An immersive gaming interface with real-time data visualization and 3D elements.</p>
+                            <a href="https://tech-start-pro-cyan.vercel.app/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-3.png" alt="Project 3">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Framer Motion</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>A modern e-commerce solution with advanced animations and user experience.</p>
+                            <button class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-4.webp" alt="Project 4">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>Next.js</span>
+                                    <span>Three.js</span>
+                                    <span>GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Al Hijjra Tourisme</h3>
+                            <p>A cutting-edge agency website with immersive 3D experiences and smooth animations.</p>
+                            <a href="https://tourism-agency2-kr3e.vercel.app/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-5.webp" alt="Project 5">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>WebGL</span>
+                                    <span>GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce</h3>
+                            <p>An innovative platform showcasing the latest in technology and design trends.</p>
+                            <a href="https://masterecomm.vercel.app/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-scroll data-scroll-speed="0.2">
+                        <div class="project-image">
+                            <img src="images/project-6.webp" alt="Project 6">
+                            <div class="project-overlay">
+                                <div class="project-tech">
+                                    <span>Vue.js</span>
+                                    <span>Three.js</span>
+                                    <span>GSAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Digital Art Gallery</h3>
+                            <p>A virtual gallery experience with interactive 3D art pieces and smooth navigation.</p>
+                            <a href="https://nova-taupe-psi.vercel.app/" target="_blank" class="project-btn">
+                                <span>View Project</span>
+                                <i class="ph ph-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title" data-scroll data-scroll-speed="0.5">Get In Touch</h2>
+                <div class="contact-content">
+                    <form class="contact-form" data-scroll data-scroll-speed="0.2">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-scroll-section>
+        <div class="footer-background">
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ZoukhDev</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" data-scroll-to>Home</a>
+                    <a href="#about" data-scroll-to>About</a>
+                    <a href="#projects" data-scroll-to>Projects</a>
+                    <a href="#contact" data-scroll-to>Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 256 256">
+                            <path d="M216,104v8a56.06,56.06,0,0,1-48.44,55.47A39.8,39.8,0,0,1,176,192v40a8,8,0,0,1-8,8H104a8,8,0,0,1-8-8V216H72a40,40,0,0,1-40-40A24,24,0,0,0,8,152a8,8,0,0,1,0-16,40,40,0,0,1,40,40,24,24,0,0,0,24,24H96v-8a39.8,39.8,0,0,1,8.44-24.53A56.06,56.06,0,0,1,56,112v-8a58.14,58.14,0,0,1,7.69-28.32A59.78,59.78,0,0,1,69.07,28,8,8,0,0,1,76,24a59.75,59.75,0,0,1,48,24h24a59.75,59.75,0,0,1,48-24,8,8,0,0,1,6.93,4,59.74,59.74,0,0,1,5.37,47.68A58,58,0,0,1,216,104Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg viewBox="0 0 256 256">
+                            <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZoukhDev. Made with ❤️.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="simple-loading.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
