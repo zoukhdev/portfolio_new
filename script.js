@@ -1,6 +1,48 @@
 // GSAP and Locomotive Scroll Integration
 gsap.registerPlugin(ScrollTrigger);
 
+// Mobile Spline handling
+function initMobileSpline() {
+    const splineContainer = document.querySelector('.spline-container');
+    const splineIframe = splineContainer?.querySelector('iframe');
+    
+    if (!splineContainer || !splineIframe) return;
+    
+    // Check if mobile device
+    const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    
+    if (isMobile) {
+        // Reduce opacity and add loading fallback for mobile
+        splineContainer.style.opacity = '0.1';
+        
+        // Add a fallback background for mobile
+        const fallbackBg = document.createElement('div');
+        fallbackBg.className = 'spline-fallback';
+        fallbackBg.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.3) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(139, 92, 246, 0.3) 0%, transparent 50%);
+            z-index: -2;
+        `;
+        splineContainer.appendChild(fallbackBg);
+        
+        // Handle iframe loading
+        splineIframe.addEventListener('load', () => {
+            console.log('Spline iframe loaded on mobile');
+        });
+        
+        splineIframe.addEventListener('error', () => {
+            console.log('Spline iframe failed to load on mobile, using fallback');
+            splineContainer.style.opacity = '0';
+            fallbackBg.style.opacity = '1';
+        });
+    }
+}
+
 // Initialize Locomotive Scroll
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
@@ -611,6 +653,14 @@ function skipLoading() {
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM loaded, initializing...');
+    
+    // Initialize mobile Spline handling
+    initMobileSpline();
+    
+    // Handle window resize for responsive Spline
+    window.addEventListener('resize', () => {
+        setTimeout(initMobileSpline, 100);
+    });
     
     // Ultra-simple loading system
     console.log('Starting ultra-simple loading...');
